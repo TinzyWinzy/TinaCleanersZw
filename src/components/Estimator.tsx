@@ -41,7 +41,7 @@ export default function Estimator() {
   }, [service, location, safeScale, estimatedLow, estimatedHigh]);
 
   return (
-    <section id="estimator" className="scroll-mt-20 bg-white py-12 sm:py-16 lg:py-20">
+    <section id="estimator" className="scroll-mt-20 bg-gradient-to-b from-white to-gray-50 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8 sm:mb-10">
@@ -56,7 +56,7 @@ export default function Estimator() {
             </p>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-2xl shadow-xl p-6 sm:p-8">
+          <div className="bg-white border border-gray-100 rounded-2xl shadow-xl p-6 sm:p-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
               <div>
                 <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 mb-2">
@@ -66,7 +66,7 @@ export default function Estimator() {
                 <select
                   value={serviceIndex}
                   onChange={(e) => setServiceIndex(Number(e.target.value))}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-slate-800 bg-white focus:ring-2 focus:ring-emerald-800 focus:border-emerald-800 outline-none text-sm"
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-slate-800 bg-white focus:ring-2 focus:ring-emerald-800 focus:border-emerald-800 outline-none text-sm"
                 >
                   {services.map((s, i) => (
                     <option key={s.name} value={i}>
@@ -84,7 +84,7 @@ export default function Estimator() {
                 <select
                   value={locationIndex}
                   onChange={(e) => setLocationIndex(Number(e.target.value))}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-slate-800 bg-white focus:ring-2 focus:ring-emerald-800 focus:border-emerald-800 outline-none text-sm"
+                  className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-slate-800 bg-white focus:ring-2 focus:ring-emerald-800 focus:border-emerald-800 outline-none text-sm"
                 >
                   {locations.map((l, i) => (
                     <option key={l.name} value={i}>
@@ -103,7 +103,7 @@ export default function Estimator() {
               <div className="flex items-center gap-4">
                 <button
                   onClick={() => setScale((s) => Math.max(1, s - 1))}
-                  className="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 hover:bg-gray-50 text-slate-700 transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-200 hover:bg-gray-50 text-slate-700 transition-colors"
                   aria-label="Decrease scale"
                 >
                   <Minus className="w-4 h-4" />
@@ -113,7 +113,7 @@ export default function Estimator() {
                 </span>
                 <button
                   onClick={() => setScale((s) => Math.min(50, s + 1))}
-                  className="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 hover:bg-gray-50 text-slate-700 transition-colors"
+                  className="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-200 hover:bg-gray-50 text-slate-700 transition-colors"
                   aria-label="Increase scale"
                 >
                   <Plus className="w-4 h-4" />
@@ -121,7 +121,7 @@ export default function Estimator() {
               </div>
             </div>
 
-            <div className="mt-6 sm:mt-8 bg-mint-50 rounded-xl p-5 sm:p-6 text-center border border-emerald-100">
+            <div className="mt-6 sm:mt-8 bg-gradient-to-br from-mint-50 to-white rounded-xl p-5 sm:p-6 text-center border border-emerald-100">
               <p className="text-xs sm:text-sm text-slate-500 font-medium uppercase tracking-wider">
                 Estimated Price Range
               </p>

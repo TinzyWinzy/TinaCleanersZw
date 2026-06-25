@@ -1,4 +1,4 @@
-import { Star, BadgeCheck } from "lucide-react";
+import { Star, BadgeCheck, Quote } from "lucide-react";
 
 const testimonials = [
   {
@@ -30,9 +30,12 @@ function StarRating() {
 
 export default function Testimonials() {
   return (
-    <section className="bg-white py-12 sm:py-16 lg:py-20">
+    <section id="testimonials" className="scroll-mt-20 bg-white py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-14">
+          <span className="inline-block text-xs font-semibold text-emerald-800 bg-mint-50 px-3 py-1 rounded-full mb-4">
+            Testimonials
+          </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             What Our Clients Say
           </h2>
@@ -45,10 +48,11 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="relative bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
+              <Quote className="absolute top-4 right-4 w-8 h-8 text-emerald-800/5" />
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-full bg-emerald-800 flex items-center justify-center text-white font-bold text-sm">
+                <div className="w-11 h-11 rounded-full bg-gradient-to-br from-emerald-800 to-sky-600 flex items-center justify-center text-white font-bold text-sm shadow-md">
                   {t.name.charAt(0)}
                 </div>
                 <div>
@@ -62,7 +66,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <StarRating />
-              <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+              <p className="mt-3 text-sm text-slate-600 leading-relaxed relative z-10">
                 {t.text}
               </p>
             </div>

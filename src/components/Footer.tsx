@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="w-6 h-6 text-emerald-400" />
+              <Sparkles className="w-6 h-6 text-sky-400" />
               <span className="text-lg font-extrabold text-white">
                 Tina Cleaners
               </span>
@@ -24,7 +24,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
-                <User className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
+                <User className="w-4 h-4 text-sky-400 mt-0.5 shrink-0" />
                 <span>Tinashe Chomunorwa</span>
               </li>
               <li>
@@ -34,7 +34,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-start gap-2 hover:text-white transition-colors"
                 >
-                  <MapPin className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
+                  <MapPin className="w-4 h-4 text-sky-400 mt-0.5 shrink-0" />
                   <span>
                     Second Street and Livingstone Ave, Harare, Zimbabwe
                   </span>
@@ -45,7 +45,7 @@ export default function Footer() {
                   href="mailto:tinashechomunorwa0@gmail.com"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
-                  <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <Mail className="w-4 h-4 text-sky-400 shrink-0" />
                   <span className="truncate">tinashechomunorwa0@gmail.com</span>
                 </a>
               </li>
@@ -54,7 +54,7 @@ export default function Footer() {
                   href="tel:+263777998810"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
-                  <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
+                  <Phone className="w-4 h-4 text-sky-400 shrink-0" />
                   <span>+263 77 799 8810</span>
                 </a>
               </li>
@@ -81,7 +81,7 @@ export default function Footer() {
               Tech Stack
             </h3>
             <div className="flex items-center gap-2 text-sm text-slate-400">
-              <Zap className="w-4 h-4 text-emerald-400" />
+              <Zap className="w-4 h-4 text-sky-400" />
               <span>Built with React + Vite + Vercel</span>
             </div>
             <p className="text-xs text-slate-500 mt-6">
