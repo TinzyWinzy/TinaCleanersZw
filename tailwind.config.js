@@ -5,10 +5,11 @@ export default {
     extend: {
       colors: {
         emerald: {
-          800: "#065F46",
+          800: "#c90200",
+          700: "#a00100",
         },
         mint: {
-          50: "#D1FAE5",
+          50: "#546bad",
         },
       },
       fontFamily: {
